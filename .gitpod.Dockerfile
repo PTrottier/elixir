@@ -1,5 +1,7 @@
 FROM gitpod/workspace-full
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install Elixir (as per https://elixir-lang.org/install.html#unix-and-unix-like)
 RUN sudo apt-get -q update && \
     sudo wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && \
